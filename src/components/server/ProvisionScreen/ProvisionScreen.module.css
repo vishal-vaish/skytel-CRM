@@ -1,0 +1,168 @@
+.provisionWrapperContainer {
+    display: flex;
+    width: 100%;
+    background-color: lightblue;
+    height: calc(100vh - 3.5rem);
+}
+
+.tableContainer {
+    background-color: white;
+    flex: 2;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+
+.tableHeader {
+    display: flex;
+    border-bottom: 1px solid blue;
+}
+
+.headerCell {
+    color: blue;
+    font-weight: bold;
+    flex: 1;
+    min-width: 0;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.bodyContainer {
+    height: 95%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+
+.rowDiv {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 0;
+    gap: .8rem;
+}
+
+.rowDiv:nth-child(even) {
+    background-color: #eeebeb;
+}
+
+.cellDiv {
+    color: gray;
+    font-size: 0.8rem;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cellDiv,
+.headerCell {
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.editIcon,
+.deleteIcon {
+    color: #6f6af8;
+    cursor: pointer;
+}
+
+
+.provisionRightContainer {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.provisionHeader {
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.inputContainer > label {
+    padding-left: 0.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.inputField {
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 95%;
+    border: 1px solid gray;
+}
+
+.select {
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.inputField:focus,
+.select:focus {
+    outline: none;
+}
+
+.errorMessage {
+    color: red;
+    font-weight: 600;
+    text-align: center;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    background-color: #6f6af8;
+    color: white;
+}
+
+.CancelButton{
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}

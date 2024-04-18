@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app > div:first-child {
+    height: 100vh !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+video {
+  object-fit: cover;
+}
+
+.image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
